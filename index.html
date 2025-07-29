@@ -1,60 +1,40 @@
-body{
-background-color: #d0d0d0;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-}
-.calculadora{
-background-color:#333;
-padding: 20px;
-border-radius:20px;
-box-shadow: 0 10px 25px;
-width: 320px;
-}
-.visor{
-background-color: black;
-color: #0f0;
-font-size: 36px;
-text-align: right;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-box-shadow:inset 008px #0f0 ;
-height: 60px;
-overflow-x: auto;
-}
-.botoes{
-display: grid;
-grid-template-columns: repeat(4,1fr);
-gap: 10px;
-}
-button {
-padding: 20px;
-font-size: 20px;
-border: none;
-border-radius: 10px;
-background-color: #555;
-color: white;
-cursor: pointer;
-transition: 0.2s;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>calculadora</title>
+</head>
+<body>
+<div class="calculadora">
+<div class="visor" id="visor">0</div>
+<div class="botoes">
 
-button:hover {
-background-color: #777;
-}
+<button onclick="limpar">C</button>
+<button onclick="adicionar('/')">:</button>
+<button onclick="adicionar('*')">x</button>
+<button onclick="adicionar('-')">-</button>
 
-button.igual {
-background-color: #009688;
-grid-row: span 2;
-}
 
-button.igual:hover {
-background-color: #00796b;
-}
+<button onclick="adicionar('7')">7</button>
+<button onclick="adicionar('8')">8</button>
+<button onclick="adicionar('9')">9</button>
+<button onclick="adicionar('+')">+</button>
 
-button.zero {
-grid-column: span 2;
-}
+<button onclick="adicionar('4')">7</button>
+<button onclick="adicionar('5')">8</button>
+<button onclick="adicionar('6')">9</button>
+<button onclick="calcular()" class="igual">=</button>
+
+<button onclick="adicionar('1')">1</button>
+<button onclick="adicionar('2')">2</button>
+<button onclick="adicionar('3')">3</button>
+<button onclick="adicionar('.')">.</button>
+
+
+<button onclick="adicionar('0')" class="zero">0</button>
+</div>
+</div>
+</body>
+</html>
