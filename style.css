@@ -15,14 +15,14 @@ box-shadow: 0 10px 25px;
 width: 320px;
 }
 .visor{
-background-color: black;
-color: rgb(0, 255, 242);
+background-color: rgb(95, 138, 127);
+color: rgb(229, 245, 244);
 font-size: 36px;
 text-align: right;
 padding: 20px;
 border-radius: 10px;
 margin-bottom: 20px;
-box-shadow:inset 008px rgb(0, 238, 255) ;
+box-shadow:inset 008px rgb(177, 210, 212) ;
 height: 60px;
 overflow-x: auto;
 }
@@ -37,7 +37,7 @@ font-size: 20px;
 border: none;
 border-radius: 10px;
 background-color: hwb(160 28% 55%);
-color: rgb(223, 248, 227);
+color: rgb(223, 248, 246);
 cursor: pointer;
 transition: 0.2s;
 }
